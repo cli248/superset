@@ -13,6 +13,6 @@ jobs:
       uses: redhat-actions/buildah-build@v2
       with:
         image: chenliu90/jarvis-bi
-        tags: v0.1 ${{ github.event.pull_request.number }} ${{ github.sha }}
+        tags: v0.1 ${{ github.sha }}
         dockerfiles: |
           ./Dockerfile
